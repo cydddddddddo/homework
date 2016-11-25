@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.homework.myapplication2.MainActivity">
+
+    <TextView
+        android:id="@+id/Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="密  码："
+        android:textSize="68px"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="184dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="账  号："
+        android:textSize="68px"
+        android:layout_alignBaseline="@+id/IDInputField"
+        android:layout_alignBottom="@+id/IDInputField"
+        android:layout_alignLeft="@+id/Password"
+        android:layout_alignStart="@+id/Password" />
+
+    <EditText
+        android:id="@+id/PasswordInputField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="85px"
+        android:minWidth="450px"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:layout_alignBottom="@+id/Password"
+        android:layout_alignLeft="@+id/IDInputField"
+        android:layout_alignStart="@+id/IDInputField" />
+
+    <EditText
+        android:id="@+id/IDInputField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="85px"
+        android:minWidth="450px"
+        android:maxLines="1"
+        android:layout_marginBottom="27dp"
+        android:layout_above="@+id/PasswordInputField"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="47dp"
+        android:layout_marginEnd="47dp"
+        />
+
+    <Button
+        android:id="@+id/denglu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:textSize="70px"
+        android:layout_below="@id/PasswordInputField"
+        android:layout_alignRight="@id/PasswordInputField"
+        android:layout_alignEnd="@id/PasswordInputField"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="45dp"
+        android:shadowColor="#FFFFFF"
+        />
+
+    <Button
+        android:id="@+id/zhuche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:textSize="70px"
+        android:shadowColor="#FFFFFF"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_alignBaseline="@+id/denglu"
+        android:layout_alignBottom="@+id/denglu"
+        android:layout_alignLeft="@+id/Password"
+        android:layout_alignStart="@+id/Password" />
+
+
+</RelativeLayout>
